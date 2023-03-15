@@ -38,7 +38,7 @@ const replyData = ({ res, httpMethod, httpStatus, data, message}) => {
     case Method.POST:
       count = data.length;
       break;
-    // case 'DELETE':
+    case Method.DELETE:
     case Method.PATCH:
       count = 1;
       break;

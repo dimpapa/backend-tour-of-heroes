@@ -9,7 +9,6 @@ async function createHero(req, res, next)
 
     try {
         const data = await db("tblHeroes").insert({
-            id: +req.body.id,
             name: req.body.name,
         });
         console.debug(data);
